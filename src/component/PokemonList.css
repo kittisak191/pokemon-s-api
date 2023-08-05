@@ -1,21 +1,40 @@
 .pokemon {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 10px; 
-  }
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
 .loading-skeleton {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .loading-skeleton__name {
-    width: 150px;
-    height: 20px;
-    background-color: #ccc;
-    margin-right: 10px;
+  width: 150px;
+  height: 20px;
+  background-color: #ccc;
+  margin-right: 10px;
 }
 .loading-skeleton__image {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
 }
-  
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  min-width: 200px;
+}
+
+select {
+  min-width: 120px;
+}
